@@ -21,7 +21,8 @@ public class StartCommandParser implements Parser<StartCommand> {
         int numberOfQuestions = 0;
         Set<Tag> tagsSet = new HashSet<>();
         String[] parameters = args.strip().split(" ");
-        if (parameters.length > 1 ) {
+
+        if (parameters.length > 1) {
             for (String param : parameters) {
                 try {
                     Integer.parseInt(param);
