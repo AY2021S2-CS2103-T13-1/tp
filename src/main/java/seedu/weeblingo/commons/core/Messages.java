@@ -18,4 +18,6 @@ public class Messages {
             + "can only be done in learn mode!";
     public static final String MESSAGE_QUIZ_ALREADY_ENDED = "The quiz session has already ended. \n"
             + "Enter \"end\" to go back to menu mode.";
+    public static final String MULTIPLE_CHECKING_AFTER_SUCCESS = "You already got it correct, please enter \"next\" "
+            + "to go to the next question";
 }
