@@ -20,10 +20,18 @@ public class StartCommandParser implements Parser<StartCommand> {
         String trimmedArgs = args.trim();
         int numberOfQuestions = 0;
         Set<Tag> tagsSet = new HashSet<>();
-        if (trimmedArgs.contains(" ")) {
-            throw new ParseException(
-                    String.format(MESSAGE_INVALID_COMMAND_FORMAT, StartCommand.MESSAGE_USAGE));
+        String[] parameters = args.strip().split(" ");
+        if (parameters.length > 1 ) {
+            for (String param : parameters) {
+                try {
+                    Integer.parseInt(param);
+                    throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, StartCommand.MESSAGE_USAGE));
+                } catch (NumberFormatException e) {
+                    continue;
+                }
+            }
         }
+
         if (!trimmedArgs.isEmpty()) {
             try {
                 numberOfQuestions = Integer.parseInt(args.replaceAll("\\s+", ""));

@@ -205,6 +205,11 @@ public class CheckCommandTest {
         }
 
         @Override
+        public void switchModeQuizSessionEnded() {
+            throw new AssertionError("This method should not be called.");
+        }
+
+        @Override
         public void switchModeCheckSuccess() {
             throw new AssertionError("This method should not be called.");
         }
