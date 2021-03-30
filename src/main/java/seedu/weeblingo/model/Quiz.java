@@ -18,9 +18,6 @@ import seedu.weeblingo.model.tag.Tag;
  */
 public class Quiz {
 
-    public static final String QUIZ_END_MESSAGE = "The Quiz is over! \n"
-            + "Enter \"end\" to end the quiz. \n";
-
     private static Queue<Flashcard> quizSessionQueue;
 
     private Flashcard currentQuiz;

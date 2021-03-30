@@ -144,6 +144,8 @@ public interface Model {
 
     void switchModeQuizSession();
 
+    void switchModeQuizSessionEnded();
+
     void switchModeCheckSuccess();
 
     void switchModeHistory();

@@ -12,9 +12,10 @@ public class Messages {
     public static final String NO_QUIZ_ERROR_MESSAGE = "The quiz hasn't started yet!";
     public static final String MESSAGE_END_IN_MENU = "Invalid 'end' command in menu mode";
     public static final String MESSAGE_NOT_IN_QUIZ_MODE = "Not in quiz mode yet.";
-    public static final String QUIZ_END_MESSAGE = "The Quiz is over! \n"
+    public static final String MESSAGE_QUIZ_ENDED = "The Quiz is over! \n"
             + "Enter \"end\" to go back to menu mode. \n";
     public static final String MESSAGE_TAG_NOT_IN_LEARN_MODE = "Tagging and deletion of tags "
             + "can only be done in learn mode!";
-
+    public static final String MESSAGE_QUIZ_ALREADY_ENDED = "The quiz session has already ended. \n"
+            + "Enter \"end\" to go back to menu mode.";
 }
